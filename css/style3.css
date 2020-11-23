@@ -1,0 +1,46 @@
+/* หน้า futurecareer */
+*{
+    box-sizing: border-box;  
+}
+.title{
+    margin: 200px 50px 0px 50px;
+    animation: fadeIn 2s;
+}
+.title h1{
+    font-size: 48px;
+    text-align: center;
+    color: white;
+    text-transform: uppercase;
+}
+.boxfuture{
+    margin: 0px 80px 0px 80px;
+    animation: fadeIn 2s;
+    display: flex;
+    flex-wrap: wrap;    /*Flex-Wrap – กำหนดว่าถ้า Element ต่าง ๆ มีการบีบอัดกันเกิดขึ้นเนื่องจาก Container มีขนาดเล็ก จะให้มีการ Wrap หรือขึ้นบรรทัดใหม่ใน Element ส่วนที่เกินมาหรือไม่ (Default = Nowrap)*/
+                        /*flex-wrap: wrap; /*ทำให้ box ไม่ซ้อนกัน*/
+       
+}
+.career{
+    margin: 50px 50px 100px 50px;
+    flex: 1;
+}
+.career img{
+    width: auto;
+    height: 200px;
+    margin: 50px auto 50px auto;
+    display: block;
+    transition: .2s;
+}
+.career p{
+    font-size: 26px;
+    font-weight: bold;
+    color: #333333;
+    text-transform: uppercase;
+    text-align: center;
+}
+.career img:hover{
+    transform: scale(1.5);
+} 
+/*----------------------------------------------------------------*/
+/*คำสั่ง flexbox*/
+/*flexbox หรือ flexible box คือเครื่องมือทาง CSS ที่ช่วยให้เราสามารถจัดเรียง element ต่าง ๆ ที่อยู่ใน container เดียวกันได้แบบ responsive ตามที่เราต้องการ โดยวิธีการใช้นั้นจะเริ่มจากการที่เรากำหนด CSS style ตรง container ที่เราต้องการให้เป็น flexbox ด้วย display: flex;*/

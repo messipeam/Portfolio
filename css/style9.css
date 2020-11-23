@@ -1,0 +1,45 @@
+/*หน้า reference*/
+.container{
+    margin: 200px 50px;
+    animation: fadeIn 2s;
+}
+.container h1{
+    font-size: 48px;
+    text-align: center;
+    color: white;
+    text-transform: uppercase;
+}
+.boxref{
+    margin: 50px;
+}
+.boxref .title{
+    font-size: 36px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+.boxref .info{
+    font-size: 16px;
+}
+.info ul{
+    margin-bottom: 10px;
+}
+.example {
+    border: 1px solid black;
+    display: inline-block;
+    padding: 10px;
+    background-color: #333333;
+    color: white;
+}
+.try a{
+    text-decoration: none;
+    background-color: #333333;
+    padding: 10px;
+    color: white;
+}
+.try :hover{
+    color: rgb(0, 212, 0);
+}
+.try :active{
+    color: white;
+}
+/*----------------------------------------------------------------*/

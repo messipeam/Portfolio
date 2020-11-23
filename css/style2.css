@@ -1,0 +1,86 @@
+/* หน้า portfolio */
+body{
+    background-size: cover;
+}
+.boxport{
+    text-align: center;
+    margin: 200px 100px 0px 100px;
+}
+.boxport h1{
+    font-size: 72px;
+    word-wrap: break-word;
+    color: white;
+    margin-bottom: 50px;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+}
+.boxport .logo{
+    width: auto;
+    margin: 0px;
+    height: 400px;
+    animation: up-down 3s infinite alternate; /*อนิเมชั่น loop ไม่สิ้นสุด*/
+}
+.boxport span{
+    display: inline-block;
+    margin: 10px 10px 50px 10px;
+}
+.boxport .icon{
+    width: auto;
+    height: 50px;
+    transition: .2s;
+}
+
+.icon:hover{
+    transform: scale(1.5); /*เมื่อเอาเมาส์ไปชี้ไว้ ขนาดจะใหญ่ขึ้น*/
+}
+.icon:active{
+    transform: scale(1); /*เมื่อเอาเมาส์ไปชี้ไว้ ขนาดจะเท่าเดิม*/
+    
+}
+
+/*ส่วนของ footer copyright */
+.footer{
+    display: flex; 
+    justify-content: center; /*Justify-Content – กำหนดลักษณะการจัดเรียง Element ระหว่างแถวในแนวแกนหลักที่กำหนดใน Flex-Direction (Default = Flex-Start)*/
+}
+.footer p{ 
+    line-height: 20px;
+    text-align: center;
+    color: #333333;
+    font-size: 12px;
+    text-transform: capitalize;
+    font-weight: bold;
+}
+.boxport ,.footer{
+    animation: fadeIn 2s; /* fade ตัว content เข้า 2 วิ*/
+}
+
+/*----------------------------------------------------------------*/
+@keyframes up-down{
+    0%{
+        transform: translateY(0); /*กำหนดเลื่อนแกน Y ตำแหน่ง 0 ที่จุดเดิม*/
+        
+    }
+    50%{
+        transform: translateY(-50px); /*เลื่อนแกน Y ขึ้นด้านบน -50*/
+        opacity: 80%;
+    }
+    100%{
+        transform: translateY(0); /*กลับมาที่ตำแหน่งเดิม*/
+        
+}
+
+/*----------------------------------------------------------------*/
+
+
+
+/*คำสั่ง flexbox*/
+/*flexbox หรือ flexible box คือเครื่องมือทาง CSS ที่ช่วยให้เราสามารถจัดเรียง element ต่าง ๆ ที่อยู่ใน container เดียวกันได้แบบ responsive ตามที่เราต้องการ โดยวิธีการใช้นั้นจะเริ่มจากการที่เรากำหนด CSS style ตรง container ที่เราต้องการให้เป็น flexbox ด้วย display: flex;*/
+
+/*คีย์เฟรม(Keyframe)คือช่องสำหรับกำหนดค่า เพื่อสร้างความเคลื่อนไหวในแต่ละช่วงเวลาให้กับคลิปวีดีโอจำเป็นต้องมีคีย์เริ่มต้น และคีย์สิ้นสุด*/
+
+
+
+
+
+

@@ -1,0 +1,40 @@
+/* หน้า work */
+.container{
+    margin: 200px 50px;
+    animation: fadeIn 2s;
+}
+.container h1{
+    font-size: 48px;
+    text-align: center;
+    color: white;
+    text-transform: uppercase;
+}
+.boxwork{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 50px;
+    padding: 10px;
+    
+}
+.work{
+    margin: 30px 100px ;
+    padding: 10px;
+}
+.work img{
+    width: auto;
+    height: 300px;
+    margin: 50px auto;
+    display: block;
+    border: 10px solid #333333;
+    border-radius: 5px;
+}
+.work p{
+    font-size: 26px;
+    font-weight: bold;
+    color: #333333;
+    text-transform: uppercase;
+    text-align: center;
+    line-height: 40px;
+}
+/*----------------------------------------------------------------*/

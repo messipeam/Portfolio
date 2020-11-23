@@ -1,0 +1,100 @@
+/* หน้า skills */
+.container{
+    margin: 200px 50px;
+    animation: fadeIn 2s;
+
+    
+}
+.container h1{
+    font-size: 48px;
+    text-align: center;
+    color: white;
+    text-transform: uppercase;
+}
+.boxskill{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+    padding: 5px;
+}
+.boxskill .title{
+    font-size: 36px;
+}
+.skills{
+    display: flex;
+    align-self: center;
+    margin: 10px 100px 10px 100px ;
+}
+.boxskills{
+    margin: 10px 0px 10px 0px;
+    padding: 10px;
+
+}
+.skills .skill_type{
+    color: #333333;
+    text-align: left;
+    font-size: 26px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    margin: 20px;
+    transition: .4s;
+    margin-bottom: 1px; 
+}
+.skill_outer-bar, .skill_inner-bar{
+    height: 25px;
+    width: 400px;
+    border-radius: 20px;
+}
+.skill_outer-bar{
+    background-color: #555555;
+}
+.skill_inner-bar{
+    animation: fillBar 2s forwards alternate;
+    transform: scaleX(0);
+    transform-origin: 0 0;
+    text-align: right;
+    font-size:18px;
+    padding-right: 5px;
+    color: white;
+}
+.skill_inner-bar--100{
+    width: 100%;
+    background-color: #333333;
+}
+.skill_inner-bar--90{
+    width: 90%;
+    background-color: #333333;
+}
+.skill_inner-bar--80{
+    width: 80%;
+    background-color: #333333;
+}
+.skill_inner-bar--70{
+    width: 70%;
+    background-color: #333333;
+}
+.skill_inner-bar--60{
+    width: 60%;
+    background-color: #333333;
+}
+.skill_inner-bar--50{
+    width: 50%;
+    background-color: #333333;
+}
+.skill_inner-bar--40{
+    width: 40%;
+    background-color: #333333;
+}
+
+.skills .skill_type:hover{
+    color:white;
+    
+}
+@keyframes fillBar{
+    to{
+        transform: scaleX(1);
+    }
+}
+/*----------------------------------------------------------------*/

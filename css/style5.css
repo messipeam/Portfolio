@@ -1,0 +1,42 @@
+/*หน้า education*/
+.title{
+    margin: 200px 50px;
+    animation: fadeIn 2s;
+}
+.title h1{
+    font-size: 48px;
+    text-align: center;
+    color: white;
+    text-transform: uppercase;
+}
+.boxedu{
+    margin: 0px 50px 0px 50px;
+    animation: fadeIn 2s;
+    display : flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.edu{
+   margin: 50px 50px 100px 50px;
+   flex: 1; /*ระยะต่อ box*/
+}
+.edu img{
+    width: auto;
+    height: 150px;
+    margin: 50px auto 50px auto;
+    display: block;
+    transition: .2s;
+}
+.edu p{
+    font-size: 26px;
+    font-weight: bold;
+    color: #333333;
+    text-transform: uppercase;
+    text-align: center;
+    line-height: 40px;
+}
+.edu img:hover{
+    transform: scale(1.5); /*ขยายสเกลรูปเมื่อเม้าส์ไปชี้ค้างไว้*/
+} 
+
+/*----------------------------------------------------------------*/

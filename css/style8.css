@@ -1,0 +1,52 @@
+/*หน้า why*/
+.container{
+    margin: 200px 50px;
+    animation: fadeIn 2s;
+}
+.container h1{
+    font-size: 48px;
+    text-align: center;
+    color: white;
+    text-transform: uppercase;
+}
+.boxwhy{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 50px;
+}
+.why p{
+    font-size: 26px;
+    font-weight: bold;
+    color: #333333;
+    text-transform: uppercase;
+    font-style: italic;
+    line-height: 40px;
+    margin: 100px 50px 0px 50px;
+}
+.why img{
+    float: right;
+    width: auto;
+    height: 400px;
+    margin: 0px 50px 50px 80px;
+    animation: moveleft 5s infinite alternate;
+}
+.why img:hover{
+    opacity: 80%;
+}
+.why img:active{
+    opacity: 100%;
+}
+/* Animation ขยับซ้าย */
+@keyframes moveleft{
+    0%{
+        transform: translateX(0); 
+    }
+    50%{
+        transform: translateX(50px);
+    }
+    100%{ 
+        transform: translateX(0);
+        
+}
+/*----------------------------------------------------------------*/

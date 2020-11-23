@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="../css/style1.css">
+    <link rel="stylesheet" href="../css/style9.css">
+</head>
+
+<body>
+    <div id="nav">
+        <div class="logo">Portfolio</div>
+        <div class="menu">
+            <ul>
+                <li><a href="./portfolio.html">Home</a></li>
+                <li><a href="./future.html">Future career</a></li>
+                <li><a href="./aboutme.html">About me</a></li>
+                <li><a href="./education.html">Education</a></li>
+                <li><a href="./skill.html">Skills</a></li>
+                <li><a href="./work.html">Work/Showcase</a></li>
+                <li><a href="./why.html">Why choose me?</a></li>
+                <li><a href="./reference.html">References</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="container">
+        <h1>references</h1>
+        <div class="boxref">
+            <p class="title">@keyframe</p>
+            <p class="info">คีย์เฟรม(Keyframe)คือช่องสำหรับกำหนดค่า
+                เพื่อสร้างความเคลื่อนไหวในแต่ละช่วงเวลาให้กับคลิปวีดีโอจำเป็นต้องมีคีย์เริ่มต้น และคีย์สิ้นสุด</p>
+            <p class="example">
+                /* The animation code */
+                <br> @keyframes example {
+                <br> from {background-color: red;}
+                <br> to {background-color: yellow;}
+                <br> }
+
+                <br> /* The element to apply the animation to */
+                <br> div {
+                <br> width: 100px;
+                <br> height: 100px;
+                <br> background-color: red;
+                <br> animation-name: example;
+                <br>animation-duration: 4s;
+                <br>}
+            </p>
+            <p class="try"><a href="https://www.w3schools.com/css/tryit.asp?filename=trycss3_animation1">Try it Yourself
+                    >> </a></p>
+        </div>
+        <div class="boxref">
+            <p class="title">animation</p>
+            <p class="info">สำหรับทำตัว animation หรือภาพเคลื่อนไหว<br><br>
+                คำสั่งพื้นฐานของ Animation ใน CSS3 มีดังนี้<br>
+            <ul>
+                <li>animation-name คือ การตั้งชื่อให้กับรูปแบบการแสดงการเคลื่อนไหว</li>
+                <li> animation-duration คือ ระยะเวลาของการเคลื่อนไหว จาก ต้นทาง ไป ปลายทาง</li>
+                <li> animation-timing-function คือ รูปแบบการเล่นใน 1 รอบของการเคลื่อนไหวของ keyframe</li>
+                <li> animation-iteration-count คือ การทำซ้ำ เช่น จะให้ทำกี่รอบ หรือ infinite คือ วนไม่หยุด</li>
+                <li> animation-direction คือ การสั่งทิศทางการเล่น เช่น จาก 1 ถึง 10 หรือจะให้เล่นถอยหลัง จาก 10 มา 1
+                </li>
+                <li> animation-delay คือ จะให้เริ่มทำทันที หรือ ดีเลย์ ตามเวลาที่กำหนด เช่น ถ้าเรากดปุ่มแล้วต้องการให้
+                </li>
+                <li> animation ที่เราสั่งงานเริ่มเล่นเมื่อเวลาผ่านไปหลังจากกดปุ่ม 2 วินาที เราสามารถกำหนดได้ใน</li>
+                <li> animation-delay โดยค่าเริ่มต้นคือ 0 ซึ่งเป็นการสั่งให้เล่นทันที</li>
+            </ul>
+            </p>
+            <p>Example : Delay Animation</p>
+            <p class="example">
+                div {
+                <br> width: 100px;
+                <br> height: 100px;
+                <br> position: relative;
+                <br> background-color: red;
+                <br> animation-name: example;
+                <br> animation-duration: 4s;
+                <br> animation-delay: 2s;
+                <br> }
+
+
+            </p>
+            <p class="try"><a
+                    href="https://www.w3schools.com/cssref/playit.asp?filename=playcss_transform_translatey">Try it
+                    Yourself
+                    >> </a></p>
+        </div>
+        <div class="boxref">
+            <p class="title">transition</p>
+            <p class="info">CSS Transitions เป็น feature ใหม่ใน CSS3 ที่ช่วยให้เราสามารถกำหนดได้เองว่า
+                “ในการเปลี่ยนแปลงจาก value เก่าไปสู่ value ใหม่ ของในแต่ละ property นั้น เราอยากให้เป็นไปในรูปแบบไหน”
+                หรือพูดง่ายๆ ก็คือ เราสามารถกำหนดให้ html element ค่อยๆ เปลี่ยน value ในแต่ละ property ทีละนิดๆ ได้
+                ไม่ใช่เริ่มเปลี่ยนจาก 0 แล้วไป 100 เลย เป็นต้น</p>
+            <p class="example">
+                div {
+                <br> width: 100px;
+                <br> height: 100px;
+                <br> background: red;
+                <br> transition: width 2s;
+                <br> }
+                <br>div:hover {
+                <br> width: 300px;
+                <br>}
+            </p>
+            <p class="try"><a href="https://www.w3schools.com/css/tryit.asp?filename=trycss3_transition1">Try it
+                    Yourself
+                    >> </a></p>
+        </div>
+        <div class="boxref">
+            <p class="title">transform</p>
+            <p class="info">เปลี่ยนตำแหน่งและขนาดของวัตถุ</p>
+            <p class="example">
+                div {
+                <br> #myDIV {
+                <br>background-color:lightblue;
+                <br>transform:translateY(50px);
+                <br> }
+
+            </p>
+            <p class="try"><a
+                    href="https://www.w3schools.com/cssref/playit.asp?filename=playcss_transform_translatey">Try it
+                    Yourself
+                    >> </a></p>
+        </div>
+        <div class="boxref">
+            <p class="title">flex</p>
+            <p class="info">Flexbox หรือ Flexible box เป็นเครื่องมือทาง CSS (Cascading Style Sheets)
+                ที่ช่วยให้การจัดส่วนประกอบต่างๆบนหน้าเว็บไซต์ทำได้ง่ายขึ้น มีความยืดหยุ่นสูง โดยปกติ ถ้าจะใช้ layout
+                mode กับส่วนไหน ต้องเขียน property “display” ให้กับส่วนนั้น แต่การใช้ flexbox
+                จะมีความแตกต่างกันตรงที่ต้องกำหนด property “display” ไว้ที่ส่วนของ container แทน</p>
+            <p>สร้าง container ขึ้นมา</p>
+            <p class="example">
+                &lt;div class="flex-container"&gt;
+                <br> &lt;div&gt;1 &lt;/div&gt;
+                <br> &lt;div&gt;2 &lt;/div&gt;
+                <br> &lt;div&gt;3 &lt;/div&gt;
+                <br> &lt;/div&gt;
+            </p>
+            <p>กำหนด property “display: flex” :</p>
+            <p class="example">
+                .flex-container {
+                display: flex;
+                }
+            </p>
+            <p class="try"><a href="https://www.w3schools.com/css/tryit.asp?filename=trycss3_flexbox">Try it
+                    Yourself
+                    >> </a></p>
+        </div>
+    </div>
+    </div>
+    </div>
+</body>
+
+</html>
